@@ -104,6 +104,9 @@ body{
 
 .principal{
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+
 }
 
 .titulo-pagina{
@@ -118,10 +121,15 @@ body{
     background-color: #2C343A;
 }
 
+.cartao--destaque{
+    margin-bottom: 16px;
+}
+
 .cartao__conteudo{
     padding: 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
 }
 
 .cartao__destaque{
@@ -146,12 +154,12 @@ body{
     color:#95999C;
 }
 
-.cartao__info--tempo{
+.cartao__info--cartao__tempo::before{
     content: "\e90c";
     margin-right: 8px;
 }
 
-.cartao__info--Visualizacao{
+.cartao__info--cartao__visualizacao::before{
     content: "\e90f";
     margin-right: 8px;
 }
@@ -179,4 +187,10 @@ body{
 
 .cartao__botao--destaque::before{
    margin-right: 8px;
+}
+
+.cartao__botao:hover{
+    cursor: pointer;
+    color:white;
+    background-color: green;
 }
